@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row">
+            <div class="col-xl-6">
+                <h1>ELİTE AUTO CARE</h1>
+                <h2>Yolculuğunuzun herhangi bir detayını sonraya bırakmayın.</h2>
+                <a href="#services" class="btn-get-started scrollto">Hadi Başlayalım</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- End Hero -->
+<!-- ======= Services Section ======= -->
+<section id="services" class="services section-bg ">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>SERVİSLER</h2>
+            <p>
+                Yolculuğunuzun herhangi bir detayını sonraya bırakmayın.<br />
+                #EliteAutoCare bugün kullanmaya başlayın!
+            </p>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <i class="bi bi-briefcase"></i>
+                    <h4><a asp-controller="Services" asp-action="CeramicCoating">Seramik Kaplama</a></h4>
+                    <p>Boya yüzeylerine, iç mekanlara, cam ve şeffaf plastik aydınlatma kapaklarına seramik kaplamalar uygulanabilir.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+                    <i class="bi bi-brightness-high"></i>
+                    <h4><a asp-controller="Services" asp-action="InteriorDetailing">İç Detaylandırma</a></h4>
+                    <p>Aracınızın halı ve kumaşları vakumluyoruz, plastikleri ve deriyi güvenli temizleyiciler ve mikrofiber havlular...</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+                    <i class="bi bi-calendar4-week"></i>
+                    <h4><a asp-controller="Services" asp-action="ExteriorDetailing">Dış Detaylandırma</a></h4>
+                    <p>Aracınızın dışını, gevşek kir ve diğer kirleticilerin çoğunu çıkarmak için aracınızı iyice temizliyoruz. Daha sonra...</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-card-checklist"></i>
+                    <h4><a asp-controller="Services" asp-action="PaintCorrection">Boya Düzeltme</a></h4>
+                    <p>Boya düzeltme, aslında arabanızın cilasının yeniyken olduğundan daha iyi görünmesini sağlayabilir!...</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-bar-chart"></i>
+                    <h4><a asp-controller="Services" asp-action="CompleteDetailing">Tam Detaylandırma</a></h4>
+                    <p>Aracınızın eksiksiz bir şekilde detaylandırılması küçük bir başarı değildir. Sadece bir araba yıkamaktan ve halıları...</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-binoculars"></i>
+                    <h4><a asp-controller="Services" asp-action="HeadlampRestoration">Far Restorasyonu</a></h4>
+                    <p>Çağdaş araçlardaki far kapakları polikarbonat plastikten yapılmıştır, bu nedenle camdan daha...</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End Services Section -->
+<!-- ======= Tabs Section ======= -->
+<section id="tabs" class="tabs" style="color: black;">
+    <div class="container" data-aos="fade-up">
+
+        <div class="tab-content">
+            <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Aracınızı bize her getirdiğinizde gerçekten bir Elit Deneyimi yaşarsınız ve güveniniz için teşekkür ederiz!</h3>
+                        <p class="fst-italic">
+                            Müşterilerin geri gelmesini sağlayan yalnızca iş ahlakımız veya üstün ürünlerimizle ilgili değildir. Size olan bağlılığımızla ilgili. Günün sonunda bizim için önemli olan sizin onayınız ve deneyiminizdir.
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i>Bazılarının aksine, dinlemeye ve ekstra yol kat etmeye hazırız.</li>
+                            <li><i class="ri-check-double-line"></i>En kirli sürüşleri bile bitmeyen bir özveri, ayrıntılara gösterilen hırslı dikkat ve sıkı çalışmayla kirden parlamaya dönüştürüyoruz.</li>
+                            <li><i class="ri-check-double-line"></i> En son teknolojinin ve en iyi uygulamaların ön saflarında yer alıyoruz.</li>
+                        </ul>
+                        @*<p>
+                                Aracınızı bize her getirdiğinizde gerçekten bir Elit Deneyimi yaşarsınız ve güveniniz için teşekkür ederiz!
+                            </p>*@
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="~/img/tabs-2.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+            <div class="tab-pane active show" id="tab-2">
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="~/img/tabs-3.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-lg-6 order-1 order-lg-2 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Aracınızı bize getirdiğinizde aracınızı ELITE detaylandırma profesyonellerine getiriyorsunuz.</h3>
+                        @*<p class="fst-italic">
+                                Aracınızı bize getirdiğinizde aracınızı ELITE detaylandırma profesyonellerine getiriyorsunuz.
+                            </p>*@
+                        <ul>
+                            <li><i class="ri-check-double-line"></i>Arabanıza kendi arabamıza davrandığımız gibi davranırız ve ona sadece en iyi muameleyi yaparız!</li>
+                            <li><i class="ri-check-double-line"></i>En acımasız sürüşleri bile vitrin parçalarına dönüştürüyoruz.</li>
+                            <li><i class="ri-check-double-line"></i>Sert çizikler ve yerinden çıkmayan su lekelerinden bulutlu farlara ve ön camlara kadar her şey bizde.</li>
+                        </ul>
+                        <p>
+                            Utanç verici araba iç mekanı? Kırıntılarla ve günlük kullanımdan kalan kalıntılarla dolu mu? Bitirdiğimizde tanımayacaksın. Koltukları kaldırıyoruz ve detaylandırma hizmetleri ile her yüzeyi temizliyoruz. Aracınızın otoparktan yeni çıkmış gibi görünmesi için ulaşılması en zor noktaları bile siliyoruz. Bu bir vaat değil; bu bir garanti.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Tabs Section -->
