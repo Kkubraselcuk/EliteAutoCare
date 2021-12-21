@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - EliteAutoCare</title>
+    <title>@ViewData["Title"] - EliteAutoCare Sakarya</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link href="~/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    
+
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex align-items-center">
@@ -45,7 +45,7 @@
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="#hero">Otomobiller</a></li>
-                    <li><a class="nav-link scrollto" href="#team">İletişim</a></li>                    
+                    <li><a class="nav-link scrollto" asp-controller="Home" asp-action="Contact">Bize Ulaşın</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -53,7 +53,6 @@
             <a asp-controller="Services" asp-action="Index" class="get-started-btn scrollto">Hadi Başlayalım</a>
         </div>
     </header><!-- End Header -->
-
 
 
     @RenderBody()
@@ -101,8 +100,9 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h4>Çalışma Saatlerimiz</h4>
+                        <p>Pazartesi-Cumartesi</p>
+                        <p>08:30 - 18:00</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -132,7 +132,21 @@
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-
+    <!-- WhatsApp ekleme -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "905452672611",
+                call_to_action: "Merhaba, nasıl yardımcı olabilirim?",
+                position: "left",
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- WhatsApp ekleme -->
     <!-- Vendor JS Files -->
     <script src="~/lib/purecounter/purecounter.js"></script>
     <script src="~/lib/aos/aos.js"></script>
@@ -140,7 +154,7 @@
     <script src="~/lib/glightbox/js/glightbox.min.js"></script>
     <script src="~/lib/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="~/lib/swiper/swiper-bundle.min.js"></script>
-    <script src="~/lib/php-email-form/validate.js"></script>
+    @*<script src="~/lib/php-email-form/validate.js"></script>*@
 
     <!-- Template Main JS File -->
     <script src="~/js/main.js"></script>

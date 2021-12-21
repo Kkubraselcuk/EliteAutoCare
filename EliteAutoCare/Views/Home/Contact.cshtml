@@ -1,0 +1,85 @@
+﻿@using Microsoft.Web.Helpers;
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+        <div class="row" style="width: 100%; height: 10vh;"></div>
+        <div class="section-title">
+            <h2>Contact</h2>
+            @*<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>*@
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="info-box">
+                            <i class="bx bx-map"></i>
+                            <h3>Adres</h3>
+                            <p>
+                                Erenler, 54200 Erenler/Sakarya
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box mt-4">
+                            <i class="bx bx-envelope"></i>
+                            <h3>Email Us</h3>
+                            <p> <a href="mailto:info@example.com">info@example.com</a><br>contact@example.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box mt-4">
+                            <i class="bx bx-phone-call"></i>
+                            <h3>Call Us</h3>
+                            <p><a href="tel://05555555555">+90 555 555 5555</a><br>+90 555 555 5555</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form asp-controller="Home" asp-action="Contact" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="col form-group">
+                            <input type="text" name="Adi" class="form-control" required placeholder="Ad">
+                            @*<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>*@
+                        </div>
+                        <div class="col form-group">
+                            <input type="text" name="Soyadi" class="form-control" required placeholder="Soyadı">
+                        </div>
+                        <div class="col form-group">
+                            @*<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>*@
+                            <input type="email" name="Email" class="form-control" required placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Konu" class="form-control" required placeholder="İçerik">
+                        @*<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>*@
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Mesaj" rows="5" required class="form-control" placeholder="Mesaj"></textarea>
+                        @*<textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>*@
+                    </div>
+                    @*<div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>*@
+                    <div id="back" class="mb-2 text-center">
+                        @if (ViewBag.Succes != null)
+                        {
+                            <h5 class="text-success">@ViewBag.Succes</h5>
+                        }
+                        @if (ViewBag.Error != null)
+                        {
+                            <h5 class="text-danger">@ViewBag.Error</h5>
+                        }
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
+
+        </div>
+        <div class="row" style="margin: 50px 0px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.4935091095292!2d30.410275624760057!3d40.74031117225486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccb30ae22986b9%3A0x42c2ff4b393face1!2sSakarya%2C%20Erenler%2C%2054200%20Erenler%2FSakarya!5e0!3m2!1str!2str!4v1639554603397!5m2!1str!2str" style="border:0; width: 100%; height: 20vh;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section><!-- End Contact Section -->
